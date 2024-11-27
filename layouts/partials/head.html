@@ -46,4 +46,9 @@
     {{- partial "adsense.html" -}}
     {{- end -}}
 
+    {{ /* Umami link */ }}
+    {{- if hugo.IsProduction }}
+    {{- partial "umami.html" -}}
+    {{- end -}}
+
 </head>
